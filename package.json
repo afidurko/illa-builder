@@ -16,7 +16,11 @@
     "lint": "eslint \"apps/**/src/**/**.{ts,tsx}\" --config \".eslintrc.js\"",
     "lint:fix": "eslint --fix \"apps/**/src/**/**.{ts,tsx}\" --config \".eslintrc.js\"",
     "test": "turbo run test",
-    "ts-check": "turbo run ts-check"
+    "ts-check": "turbo run ts-check",
+    "desktop": "npm --prefix electron run dev",
+    "desktop:dist": "npm --prefix electron run dist",
+    "desktop:dist:dir": "npm --prefix electron run dist:dir",
+    "desktop:check:pin": "npm --prefix electron run check:pin"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
